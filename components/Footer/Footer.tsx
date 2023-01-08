@@ -19,7 +19,7 @@ const Footer = () => (
             <Header as="h4" content="Nosotros" />
             <List>
               <List.Item>
-                <Link href="/about">
+                <Link href="/about" legacyBehavior>
                   <a>Conoce más</a>
                 </Link>
               </List.Item>
@@ -29,7 +29,7 @@ const Footer = () => (
             <Header as="h4" content="Servicios" />
             <List>
               <List.Item>
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                   <a>Todos los productos</a>
                 </Link>
               </List.Item>
@@ -38,26 +38,8 @@ const Footer = () => (
           <Grid.Column width={7}>
             <Header as="h4">Hecho para</Header>
             <p>
-              <a href="https://platzi.com/">Platzi y su curso de Next.JS</a> de
-              Platzi dictado por{' '}
-              <a href="https://twitter.com/jonalvarezz">@jonalvarezz</a>
+              Conocer como funciona Next.JS
             </p>
-            <List horizontal style={{ display: 'flex' }}>
-              <List.Item
-                icon="twitter"
-                style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
-              />
-              <List.Item
-                icon="github"
-                style={{ display: 'flex' }}
-                content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
-                    GitHub
-                  </a>
-                }
-              />
-            </List>
           </Grid.Column>
         </Grid.Row>
       </Grid>
