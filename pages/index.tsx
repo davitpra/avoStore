@@ -3,8 +3,7 @@ import Layout from '@components/Layout/Layout'
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProductList from '@components/ProductList/ProductList'
 
-export const getServerSideProps = async () => {
-  // la función fetch debe de venir desde una libreria que nos ayude con la tarea
+export const getStaticProps = async () => {
 	const response = await fetch('https://avo-store-8jq9.vercel.app/api/avo')
   console.log(response)
   const { data }: TAPIAvoResponse = await response.json()
