@@ -4,6 +4,12 @@ import '../global.css'
 
 import CartProvider from '@store/Cart'
 
+export function reportWebVitals(metric: any) {
+  console.log(metric)
+  // analytics - calibre
+  // serverAnulicts.log(metric)
+}
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   // Aditional props
   // Aditional layout
