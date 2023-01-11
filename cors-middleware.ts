@@ -1,4 +1,5 @@
 import corsWrapper from 'cors'
+//@ts-ignore
 import { RequestHandler } from 'express'
 /**
  * Hey there you curious :)
