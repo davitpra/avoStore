@@ -1,9 +1,15 @@
 module.exports = {
-    typescript: {
-      // !! WARN !!
-      // Dangerously allow production builds to successfully complete even if
-      // your project has type errors.
-      // !! WARN !!
-      ignoreBuildErrors: true,
+    // typescript: {
+    //   ignoreBuildErrors: true,
+    // },
+    async rewrites() {
+      return [
+        {
+          // Nueva ruta
+          source: '/avocado/:path*',
+          // De que ruta vendrá
+          destination: '/product/:path*',
+        },
+      ]
     },
   }

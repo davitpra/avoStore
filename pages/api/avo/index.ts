@@ -1,8 +1,8 @@
-import { IncomingMessage, ServerResponse } from 'http'
+import { NextApiRequest, NextApiResponse } from 'next'
 import DB from '@database'
 import enablePublicAccess from '@cors'
 
-const allAvos = async (req: IncomingMessage, res: ServerResponse) => {
+const allAvos = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     // Generally, you would not want this in your apps.
     // See more in 'cors.js'
